@@ -2,7 +2,7 @@ html {
 	height: 100%;
 	width: 100%;
 	background: linear-gradient(45deg, #CACFD6, #D5DCE5, #A0B7D8, #506075, #182333);
-	background-size: 500% 500%; 
+	background-size: 500% 500%;
 	-webkit-animation: Gradient 10s ease infinite;
 	animation: Gradient 10s ease infinite;
 }
@@ -17,4 +17,13 @@ html {
 	0% {background-position: 0% 50%}
 	50% {background-position: 100% 50%}
 	100% {background-position: 0% 50%}
+}
+
+.joinbtn {
+	display: inline-block;
+}
+
+#opstatement {
+	font-family: monospace;
+	font-size: 36px;
 }
