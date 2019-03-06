@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+      <div
+
+
+  <script>
+    function clone(obj) {
+        if (null == obj || "object" != typeof obj) return obj;
+        var copy = obj.constructor();
+        for (var attr in obj) {
+            if (obj.hasOwnProperty(attr)) copy[attr] = obj[attr];
+        }
+        return copy;
+    }
+
+    var d1 = new Date();
+
+    /* Executes function after 5 seconds. */
+    setTimeout(function(){
+        var d2 = clone(d1);
+        alert("d1 = " + d1.toString() + "\nd2 = " + d2.toString());
+    }, 5000);
+  </script>
+  </body>
+</html>

@@ -40,9 +40,3 @@ body {
 	vertical-align: middle;
 	background-color: #CACFD6;
 }
-
-a:link, a:visited
-{
-	text-decoration: none;
-	color: black;
-}
