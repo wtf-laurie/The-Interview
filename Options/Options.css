@@ -21,6 +21,7 @@ html {
 
 body {
   align-items: center;
+
 }
 
 .middle {
@@ -39,4 +40,10 @@ body {
 	margin-bottom: 10px;
 	vertical-align: middle;
 	background-color: #CACFD6;
+}
+
+a:link, a:visited
+{
+	text-decoration: none;
+	color: Black;
 }
