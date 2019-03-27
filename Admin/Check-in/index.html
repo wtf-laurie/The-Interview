@@ -2,37 +2,97 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="check-in.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Check-In</title>
+    <style> </style>
   </head>
   <body>
 
-    <div id="box1">
-      <p id=Check-inbox> Check-In </p>
-      <p id=Floorplanbox> Floorplan </p>
-      <p id=fbbox> Food and Beverage </p>
+  <div id="top">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="">Check-In</a>
+        <a href="../Floor Plan/index.html">Floor Plan</a>
+        <a href="../Food n Bev/Admin.html">Food & Beverage</a>
+      </div>
     </div>
+  </div>
 
-    <div id="containter">
-    <div class="arrow-up"></div>
-<div class="arrow-down"></div>
-<div class="arrow-left"></div>
-<div class="arrow-right"></div>
+    <div id="containter"> </div>
       <div id="form"> </div>
-      <div id="list"></div>
-    </div>
+      <div id="list"> </div>
+      <div class="arrow-up"></div>
+  <!-- <div class="arrow-down"></div>
+      <div class="arrow-left"></div>
+      <div class="arrow-right"></div> -->
+      <div id="list">
+        <table style="width:100%">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+        </table>
+      </div>
+      <div id="input_box">
+        <p id="student_name"> Student Name <br> First       Last</p>
 
-    <!-- We will put our React component inside this div. -->
-    <div id="like_button_container"></div> <!-- this will be the div for the form where admin can input information which will then be added to the list -->
-
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
-
-    <!-- Load our React component. -->
-    <script src="like_button.js"></script>
-
+        <form action="">
+          Student Name: <input type="t
+          ext"First name="Last Name"> <input type="text" name="First Name">
+      </div>
   </body>
 </html>
