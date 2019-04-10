@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="Food-Bev.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Check-In</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+
+  </head>
+  <body>
+
+    <div id="top">
+
+      <div class="dropdown">
+
+        <button onclick="myFunction()" class="dropbtn">
+        Menu
+        </button>
+
+        <div id="myDropdown" class="dropdown-content">
+
+          <a href="../Check-in/index.html">
+            <p>
+              Check-In
+            </p>
+          </a>
+
+          <a href="../Floor Plan/index.html">
+            <p>
+              Floor Plan
+            </p>
+          </a>
+
+          <a href="../Food n Bev/Food-Bev.html">
+            <p>
+              Food and Beverage
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <div id="pagebox">
+
+      <div class="form">
+
+        <form name="myForm">
+          <p>Interviewer Name: <br> <input type="text" name="lName" placeholder="Last Name"> <input type="text" name="fName" placeholder="First Name"></p> <br><br>
+          <input type="radio" name="diet" value="Vegan">Vegan<br>
+          <input type="radio" name="diet" value="Vegitarian">Vegitarian<br>
+          <input type="radio" name="diet" value="None" checked>None<br>
+        </form>
+
+      </div>
+
+    <div class="parent">
+
+      <div class="scrollbar"></div>
+      <div class="scrollable">
+
+        <table style="width:900px">
+
+          <tr>
+            <th>Time</th>
+            <th>Interviewer</th>
+            <th>Last Name</th>
+            <th>First Name </th>
+          </tr>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th> ... </th>
+            <th>Age</th>
+          </tr>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </body>
+
+</html>
