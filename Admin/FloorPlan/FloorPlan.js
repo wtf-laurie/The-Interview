@@ -1,4 +1,14 @@
-https://jsfiddle.net/cev04knm/12/
-https://jsfiddle.net/s34pbtam/1/
-https://jsfiddle.net/owmgetkp/1/
-https://jsfiddle.net/L9n4f3ct/1/
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+    

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,32 +6,33 @@
     <title>Check-In</title>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
   </head>
   <body>
 
     <div id="top">
-
+    
       <div class="dropdown">
-
+      
         <button onclick="myFunction()" class="dropbtn">
         Menu
         </button>
-
+        
         <div id="myDropdown" class="dropdown-content">
-
+          
           <a href="../Check-in/index.html">
             <p>
-              Check-In
+              Check-In          
             </p>
           </a>
-
+          
           <a href="../Floor Plan/index.html">
             <p>
               Floor Plan
             </p>
           </a>
-
+          
           <a href="../Food n Bev/Food-Bev.html">
             <p>
               Food and Beverage
@@ -42,18 +42,21 @@
       </div>
     </div>
 
-  <div id="pagebox">
+  <div id="pagebox">   
 
       <div class="form">
-
-        <form name="myForm">
-
-          <p >
-            Student Name: <br> <input type="text" name="lName" placeholder="Last Name"> <input type="text" name="fName" placeholder="First Name"> <br><br>
-            Interviewer: <br> <input type="text" name="int" placeholder="Interviewer"> <br><br>
-         </p>
-
-        </form>
+      <p>
+      Student Name:
+        <input type="text" id="lname" placeholder="Doe">
+        <input type="text" id="fname" placeholder="John">
+       </p>
+        <br>
+      <p>
+      Interviewer and Time:
+        <input type="text" id="int" placeholder="Jane Doe Cheese LLC.">
+        <input type="text" id="time" placeholder="12:00 (24 Hour Time)">
+      </p>
+        <button onclick="addRow()">submit</button>
 
       </div>
 
@@ -62,29 +65,39 @@
       <div class="scrollbar"></div>
       <div class="scrollable">
 
-        <table style="width:900px">
-
-          <tr>
-            <th>Time</th>
-            <th>Interviewer</th>
-            <th>Last Name</th>
-            <th>First Name </th>
-          </tr>
-          <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th> ... </th>
-            <th>Age</th>
-          </tr>
-
-        </table>
+        <table id="inventory" style="width: 100%">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Interviewer</th>
+      <th>Last Name</th>
+      <th>First Name</th>
+    </tr>
+  </thead>
+  <tbody id="screen">
+  </tbody>
+</table>
 
       </div>
 
     </div>
-
+    
   </div>
-
+<script>
+    $( document ).ready(function(){
+      $('#screen').html(localStorage.getItem("data"));
+      
+    });
+    function addRow(){
+      var str = '<tr class = "boxType"><td>'+$('#time').val()+'</td>\
+  <td>'+$('#int').val()+'</td>\
+  <td>'+$('#lname').val()+'</td>\
+  <td>'+$('#fname').val()+'</td>\
+  </tr>'
+      $('#screen').append(str);
+      localStorage.setItem("data", $('#screen').html());
+    }
+  </script>
   </body>
 
 </html>

@@ -72,15 +72,8 @@
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 10px 16px;
+  padding: 12px 16px;
   z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  text-decoration: none;
-  display: block;
-  font-family: helvetica;
 }
 
 .dropdown:hover .dropdown-content {
@@ -111,6 +104,7 @@
 .parent {
   position: absolute;
   overflow: hidden;
+  margin-left: 50%;
   height: 100%;
   width: 50%;
   background: #ddd;
@@ -139,8 +133,12 @@
 
 .form {
   float: left;
-  background: ;
+  background: #DDE5F1;
   width: 50%;
   height: 100%;
-  margin-left: 50%;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
 }

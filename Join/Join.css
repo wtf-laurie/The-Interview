@@ -24,19 +24,19 @@ body {
   align-items: center;
   justify-content: center;
 }
-.bttn-medium {
+input[type=submit] {
   color: #1a9cbc;
   text-decoration: none;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s ease all;
 }
-.bttn-medium:hover {
+input[type=submit]:hover {
   color: #fff;
 }
-.bttn-medium:focus {
+input[type=submit]:focus {
   color: #fff;
 }
-.bttn-medium {
+input[type=submit] {
   font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
   z-index: 2;
 }
-.bttn-medium:before {
+input[type=submit]:before {
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   position: absolute;
@@ -64,14 +64,14 @@ body {
   background-color: #1a9cbc;
   z-index: -1;
 }
-.bttn-medium:hover:before {
+input[type=submit]:hover:before {
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   left: 0;
   right: 0;
   opacity: 1;
 }
-#bttn-medium:focus:before {
+input[type=submit]:focus:before {
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   left: 0;
